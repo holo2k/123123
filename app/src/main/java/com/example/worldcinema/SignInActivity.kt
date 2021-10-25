@@ -20,7 +20,7 @@ class SignInActivity : AppCompatActivity() {
     fun signin(view: android.view.View) {
         if(email.text.toString().isNotEmpty() && password.text.toString().isNotEmpty())
         {
-           // val intent = Intent(this@SignInActivity,MenuActivity::class.java)
+            val intent = Intent(this@SignInActivity,MainActivity::class.java)
             startActivity(intent)
         }
         else
@@ -35,19 +35,9 @@ class SignInActivity : AppCompatActivity() {
     }
 
     fun registration(view: android.view.View) {
-        if(email.text.toString().isNotEmpty() && password.text.toString().isNotEmpty())
-        {
-            // val intent = Intent(this@SignInActivity,MenuActivity::class.java)
+
+            val intent = Intent(this@SignInActivity,signUpActivity::class.java)
             startActivity(intent)
-        }
-        else
-        {
-            val alert = AlertDialog.Builder(this)
-                .setTitle("Ошибка")
-                .setMessage("Заполните все поля")
-                .setPositiveButton("OK", null)
-                .create()
-                .show()
-        }
+
     }
 }
