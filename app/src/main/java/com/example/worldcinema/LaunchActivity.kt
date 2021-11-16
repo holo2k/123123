@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import androidx.appcompat.app.AlertDialog
+import com.example.worldcinema.ui.profile.ProfileFragment
 
 class LaunchActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,4 +27,6 @@ class LaunchActivity : AppCompatActivity() {
         }
         timer.start() //Активация таймера
     }
+
+
 }

@@ -213,7 +213,7 @@
             android:layout_marginBottom="50dp"
             android:backgroundTint="#000000"
             android:gravity="center"
-            android:onClick="login"
+            android:onClick="registration"
             android:text="У меня уже есть аккаунт"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="@color/blue"
